@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Macondo&family=Merriweather:wght@300;700&family=Montserrat:wght@500&family=Neonderthaw&family=Pacifico&family=Paytone+One&family=Plus+Jakarta+Sans:wght@800&family=Poppins:wght@300;500;700&family=Raleway:wght@200;400&family=Varela+Round&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width:100%;
+    min-height:100vh;
+}
+.intro{
+    position:relative;
+    width:100%;
+    height:100vh;
+    background-color:#161616;
+    transition: 1s;
+}
+.intro .logo{
+    position:absolute;
+    color:#fff;
+    left:50%;
+    top:45%;
+    transform:translate(-50%, -50%);
+    font-size:40px;
+    font-family: 'Montserrat', sans-serif;
+    transition:1s;
+}
+.show{
+    opacity:0;
+}

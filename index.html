@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Screen</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+     <div class="intro">
+        <h1 class="logo">F &#183 IKRAN</h1>
+     </div>
+</body>
+<script>
+    const intro = document.querySelector('.intro');
+    const logo = document.querySelector('.logo');
+
+    window.addEventListener('DOMContentLoaded',()=>{
+        setTimeout(()=>{
+            setTimeout(()=>{
+            logo.classList.add('show');
+        },1000);
+        setTimeout(()=>{
+            logo.classList.remove('show');
+        });
+        setTimeout(()=>{
+            intro.style.opacity='0';
+        },2000);
+        })
+    })
+</script>
+</html>
